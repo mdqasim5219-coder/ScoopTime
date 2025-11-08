@@ -3,144 +3,111 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About | Scoop News</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <title>About | Scoop Time</title>
+  <link rel="stylesheet" href="styles.css" />
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Poppins", sans-serif;
-    }
-
-    body {
-      background: #f7f9fc;
-      color: #333;
-    }
-
-    /* 🔷 HEADER SECTION */
-    header.main-header {
-      background: #0057d8;
-      color: #fff;
+    /* ======= HEADER ======= */
+    header {
+      background: #0056d6;
+      color: white;
+      padding: 15px 25px;
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      padding: 15px 30px;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 1000;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     }
 
-    .logo {
-      font-size: 1.5rem;
-      font-weight: 700;
+    header .logo {
+      font-size: 1.6rem;
+      font-weight: bold;
       letter-spacing: 1px;
     }
 
-    nav {
-      display: flex;
-      gap: 20px;
-    }
-
     nav a {
-      color: #fff;
+      color: white;
       text-decoration: none;
+      margin: 0 12px;
       font-weight: 500;
-      transition: color 0.3s;
+      transition: 0.3s;
     }
 
     nav a:hover,
     nav a.active {
+      text-decoration: underline;
       color: #ffeb3b;
     }
 
-    /* ☰ Menu Button (Mobile) */
-    .menu-toggle {
-      display: none;
-      font-size: 1.6rem;
-      background: none;
-      border: none;
-      color: #fff;
-      cursor: pointer;
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        margin-top: 10px;
+      }
     }
 
-    /* 🔹 Page Container */
-    .page-container {
-      max-width: 900px;
-      margin: 120px auto 50px;
-      background: #fff;
-      border-radius: 10px;
+    /* ======= MAIN CONTENT ======= */
+    .privacy-container {
+      max-width: 850px;
+      margin: 80px auto;
       padding: 30px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
     }
 
-    .page-container h1 {
-      color: #0057d8;
-      margin-bottom: 15px;
+    .privacy-container h1 {
+      text-align: center;
+      color: #0056d6;
+      margin-bottom: 20px;
+      font-size: 2rem;
     }
 
-    .page-container h2 {
-      color: #0d47a1;
-      margin-top: 20px;
+    .privacy-container h2 {
+      color: #222;
+      margin-top: 25px;
+      border-left: 5px solid #0056d6;
+      padding-left: 10px;
     }
 
-    .page-container p,
-    li {
+    .privacy-container p,
+    .privacy-container li {
+      font-size: 1.05rem;
       color: #333;
       line-height: 1.7;
-      font-size: 1.05rem;
+      margin: 10px 0;
     }
 
     ul {
       margin-left: 25px;
-      list-style-type: disc;
     }
 
-    /* 🔹 Footer */
+    /* ======= FOOTER ======= */
     footer {
-      background: #0057d8;
-      color: #fff;
+      background: #0056d6;
+      color: white;
       text-align: center;
-      padding: 15px 0;
-      font-size: 0.9rem;
-      margin-top: 50px;
+      padding: 15px;
+      margin-top: 60px;
+      font-size: 0.95rem;
     }
 
-    /* 🔹 Responsive Design */
-    @media (max-width: 768px) {
-      nav {
-        display: none;
-        flex-direction: column;
-        background: #0046b3;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 100%;
-        text-align: center;
-        padding: 10px 0;
-      }
-
-      nav.active {
-        display: flex;
-      }
-
-      .menu-toggle {
-        display: block;
+    @media (max-width: 600px) {
+      .privacy-container {
+        margin: 30px 15px;
+        padding: 20px;
       }
     }
   </style>
 </head>
 <body>
-  <!-- ✅ HEADER -->
-  <header class="main-header">
-    <div class="logo">Scoop <span style="color:#ffeb3b;">News</span></div>
-    <button id="menuBtn" class="menu-toggle">☰</button>
-    <nav id="navMenu">
+
+  <header>
+    <div class="logo">Scoop Time</div>
+    <nav>
       <a href="index.html">Home</a>
-      <a href="about.html" class="active">About</a>
+      <a href="about.html"class="active">About</a>
       <a href="contact.html">Contact</a>
       <a href="privacy.html">Privacy</a>
     </nav>
@@ -180,6 +147,7 @@
   </script>
 </body>
 </html>
+
 
 
 
