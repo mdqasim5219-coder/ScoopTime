@@ -70,15 +70,21 @@
 <!-- ✅ Search Box -->
   
 </nav>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
 
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
 </header>
-<form id="searchForm">
-  <input type="text" id="searchInput" placeholder="Search news..." />
-  <button type="submit">🔍</button>
-</form>
-<div id="searchResults"></div>
-    </div>
+<div class="search-container">
+  <form id="searchForm">
+    <input type="text" id="searchInput" placeholder="Search news..." />
+    <button type="submit">
+      <span class="material-icons-sharp">search</span>
+    </button>
+  </form>
+  <div id="searchResults"></div>
+</div>
+</head>
+<body>
+
 
   <!-- HERO -->
   <main>
@@ -97,7 +103,6 @@
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiGlU8-BfmRYq2NIhb0z8NfStFKHof816Dtg&s">
       </div>
     </section>
-
     <!-- LATEST GRID -->
     <section class="latest container">
       <h2 data-lang-en="Latest" data-lang-ur="تازہ ترین">Latest</h2>
@@ -233,73 +238,105 @@ document.getElementById('searchForm').addEventListener('submit', function(e) {
   }
 });
 </script>
-
-
-
 <style>
-/* Center search box */
+/* ====== Search Section ====== */
 .search-container {
   text-align: center;
-  margin: 20px auto;
+  margin: 7px auto;
+  padding: 10px;
 }
 
-/* Search form styling */
+/* Form box */
 #searchForm {
   display: inline-flex;
   align-items: center;
-  border: 2px solid #1500d4;
-  border-radius: 50px;
+  border: 1.8px solid #1a1aff;
+  border-radius: 40px;
   overflow: hidden;
-  background-color: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  background: #fff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
 }
 
-/* Search input */
+#searchForm:focus-within {
+  box-shadow: 0 6px 20px rgba(26, 26, 255, 0.2);
+  border-color: #000ed4;
+}
+
+/* Input field */
 #searchInput {
-  padding: 10px 15px;
+  padding: 12px 18px;
   font-size: 16px;
   border: none;
   outline: none;
-  width: 220px;
+  width: 260px;
+  font-family: "Poppins", sans-serif;
+  color: #333;
 }
 
-/* Search button */
+/* Placeholder styling */
+#searchInput::placeholder {
+  color: #aaa;
+  font-weight: 400;
+}
+
+/* Button */
 #searchForm button {
-  background-color: #000ed4;
+  background: linear-gradient(135deg, #0011ff, #0059ff);
   border: none;
-  color: white;
+  color: #fff;
   font-size: 18px;
-  padding: 10px 18px;
+  padding: 12px 22px;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: all 0.3s ease;
+  border-radius: 0 40px 40px 0;
 }
 
-/* Hover effect */
 #searchForm button:hover {
-  background-color: #000ba3;
+  background: linear-gradient(135deg, #000dc2, #0041cc);
+  transform: scale(1.03);
 }
 
-/* Results styling */
+/* ====== Results Styling ====== */
 #searchResults {
-  margin-top: 15px;
+  margin-top: 10px;
   text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 
 #searchResults a {
-  display: block;
-  color: #1e11da;
+  display: inline-block;
+  color: #0026ff;
   font-weight: 600;
-  margin: 5px 0;
+  margin: 6px 10px;
   text-decoration: none;
-  transition: color 0.3s;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
+
+#searchResults a:hover {
+  background-color: #f0f4ff;
+  color: #0011ff;
+}
+
+/* ====== Responsive Design ====== */
+@media (max-width: 480px) {
+  #searchInput {
+    width: 180px;
+    font-size: 15px;
+  }
+
+  #searchForm button {
+    padding: 10px 16px;
+    font-size: 16px;
+  }
+}
+</style>
+
 
 </style>
  <script src="script.js"></script>
 
 </body>
 </html>
-
-
-
-
