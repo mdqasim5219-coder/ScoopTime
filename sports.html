@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Scoop Time — Home</title>
+  <meta name="description" content="Scoop News — Pakistan style news portal (English + Urdu)" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet">
+  <!-- Urdu Nastaleeq (fallback if available) -->
+  <link href="https://fonts.googleapis.com/earlyaccess/notonastaliqurdu.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- TOP HEADLINE TICKER -->
+  <div class="top-ticker" id="ticker">
+    <div class="ticker-inner" id="tickerInner">
+      <span class="tick-item">Breaking: New policy announced by the government.</span>
+      <span class="tick-item">Tech: Major AI update reshapes developer tools.</span>
+      <span class="tick-item">Sports: National team clinches victory in final.</span>
+      <span class="tick-item">Business: Markets rally after positive jobs report.</span>
+      <span class="tick-item">Breaking: New public health advisory released.</span>
+    </div>
+    <div class="lang-switch">
+      <button id="langEn" class="lang-btn active" data-lang="en">English</button>
+      <button id="langUr" class="lang-btn" data-lang="ur">اردو</button>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- Logo: Globe + Newspaper icons combined in SVG -->
+      <a href="index.html" class="brand">
+        
+        <span class="brand-text">
+  <span class="brand-en">🌐 <strong>Scoop</strong> Time</span>
+  <span class="brand-ur" lang="ur" dir="rtl"></span>
+</span>
+
+      </a>
+
+<header>
+  <span>
+  <div class="header-container">
+    <button id="menuBtn">☰</button>
+  </div>
+</span>
+  <nav id="navMenu">
+      <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="sports.html">Sports</a></li>
+    <li><a href="education.html">Education</a></li>
+    <li><a href="news.html">News</a></li>
+    <li><a href="business.html">Business</a></li>
+    <li><a href="pets.html">Pets</a></li>
+    <li><a href="health.html">Health</a></li>
+    <li><a href="tech.html">Tech</a></li>
+      <div class="dropdown">
+        <a href="#">More ▼</a>
+        <div class="dropdown-content">
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contect</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+      </ul>
+    </nav>
+  </div>
+</header><!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Sports — Scoop News</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- reuse same header structure (for simplicity copy header from index.html) -->
+  <!-- Header block -->
+  <div id="header-placeholder"></div>
+
+  <main class="container page-section">
+    <h1 data-lang-en="Sports" data-lang-ur="کھیل">Sports</h1>
+
+    <section class="category-grid">
+      <div class="category-col">
+        <h2 data-lang-en="Cricket" data-lang-ur="کرکٹ">Cricket</h2>
+        <article class="card small">
+          <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?w=700&q=60&auto=format&fit=crop">
+          <div class="card-body">
+            <h3><a href="article.html">Local derby ends in thriller</a></h3>
+            <p class="meta">Oct 10, 2025</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="category-col">
+        <h2 data-lang-en="Football" data-lang-ur="فٹ بال">Football</h2>
+        <article class="card small">
+          <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?w=700&q=60&auto=format&fit=crop">
+          <div class="card-body">
+            <h3><a href="article.html">Championship highlights</a></h3>
+            <p class="meta">Oct 08, 2025</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script src="script.js"></script>
+  
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> <span data-lang-en>Scoop News</span><span data-lang-ur style="display:none">اسکوپ نیوز</span>. All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="privacy.html" data-lang-en>Privacy</a>
+        <a href="contact.html" data-lang-en>Contact</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
+
