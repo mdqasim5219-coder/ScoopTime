@@ -47,17 +47,8 @@
 <body>
 
   <header class="main-header">
-  <div class="logo">
-    
-  </div>
-
-  <!-- Menu Button -->
-  <div class="header-container">
+    <div class="logo">Scoop <span style="color:#ffeb3b;">News</span></div>
     <button id="menuBtn" class="menu-toggle">☰</button>
-  </div>
-
-  <!-- Navigation -->
-  <nav id="navMenu" class="nav-menu">
    <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="sports.html">Sports</a></li>
@@ -306,31 +297,18 @@ document.getElementById('searchForm').addEventListener('submit', function(e) {
 }
 
 </style>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  const menuBtn = document.getElementById('menuBtn'); // Main menu button
-  const navMenu = document.getElementById('navMenu'); // Navigation menu
-  const dropdowns = document.querySelectorAll('.dropdown'); // Dropdown items
-
-  // Toggle main menu
-  menuBtn.addEventListener('click', function() {
-    navMenu.classList.toggle('active');
-  });
-
-  // Toggle dropdowns on mobile
-  dropdowns.forEach(drop => {
-    drop.addEventListener('click', function(e) {
-      if (window.innerWidth <= 768) { // Mobile only
-        e.preventDefault();
-        this.classList.toggle('open');
-      }
+ <script>
+    // 🔹 Mobile Menu Toggle
+    const menuBtn = document.getElementById("menuBtn");
+    const navMenu = document.getElementById("navMenu");
+    menuBtn.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
     });
-  });
-});
-</script>
+  </script>
 <script src="script.js"></script>
 
 </body>
 </html>
+
 
 
