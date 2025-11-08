@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Scoop News — Home</title>
+  <title>Scoop Time — Home</title>
   <meta name="description" content="Scoop News — Pakistan style news portal (English + Urdu)" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet">
   <!-- Urdu Nastaleeq (fallback if available) -->
@@ -31,25 +31,22 @@
     <div class="container header-inner">
       <!-- Logo: Globe + Newspaper icons combined in SVG -->
       <a href="index.html" class="brand">
+        
         <span class="brand-text">
-          <span class="brand-en">🌐Scoop time</span>
-          <span class="brand-ur" lang="ur" dir="rtl" style="display:none">اسکوپ نیوز</span>
-        </span>
+  <span class="brand-en">🌐 <strong>Scoop</strong> Time</span>
+  <span class="brand-ur" lang="ur" dir="rtl"></span>
+</span>
+
       </a>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About —Scoop News</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-  <header class="main-header">
-    <div class="logo">Scoop <span style="color:#ffeb3b;">News</span></div>
-    <button id="menuBtn" class="menu-toggle">☰</button>
-   <ul>
+<header>
+  <span>
+  <div class="header-container">
+    <button id="menuBtn">☰</button>
+  </div>
+</span>
+  <nav id="navMenu">
+      <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="sports.html">Sports</a></li>
     <li><a href="education.html">Education</a></li>
@@ -65,7 +62,8 @@
           <li><a href="contact.html">Contect</a></li>
           <li><a href="privacy.html">Privacy</a></li>
       </ul>
-  </nav>
+    </nav>
+  </div>
 </header>
 
 
@@ -297,18 +295,11 @@ document.getElementById('searchForm').addEventListener('submit', function(e) {
 }
 
 </style>
- <script>
-    // 🔹 Mobile Menu Toggle
-    const menuBtn = document.getElementById("menuBtn");
-    const navMenu = document.getElementById("navMenu");
-    menuBtn.addEventListener("click", () => {
-      navMenu.classList.toggle("active");
-    });
-  </script>
-<script src="script.js"></script>
+ <script src="script.js"></script>
 
 </body>
 </html>
+
 
 
 
