@@ -482,5 +482,57 @@ nav ul li a:hover {
     transform: translateY(0);
   }
 }
+/* Dropdown container (jo open hota hai) */
+ul.dropdown-menu {
+  background: linear-gradient(145deg, #ffffff, #f1f4ff);
+  border-radius: 15px;
+  box-shadow: 0px 10px 25px rgba(0, 71, 255, 0.15);
+  padding: 8px 0;
+  overflow: hidden;
+  animation: dropFade 0.3s ease;
+  border: 1px solid #e0e5ff;
+}
+
+/* Dropdown items */
+ul.dropdown-menu li {
+  list-style: none;
+}
+
+ul.dropdown-menu li a {
+  display: block;
+  padding: 12px 20px;
+  font-size: 16px;
+  color: #1a1a1a;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-left: 4px solid transparent;
+}
+
+/* Hover effect */
+ul.dropdown-menu li a:hover {
+  background: #0047ff;
+  color: white;
+  border-left: 4px solid #00bfff;
+  transform: translateX(5px);
+}
+
+/* Animation for dropdown opening */
+@keyframes dropFade {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Optional: Add glow on hover */
+ul.dropdown-menu li a:hover {
+  box-shadow: 0px 0px 10px rgba(0, 71, 255, 0.3);
+}
+
 
 
